@@ -271,7 +271,6 @@ local function SaveWP(pos)
             		// To fix empty table bug
             		local data = #v.data >= 1 and v.data or util.JSONToTable(file.Read(dataFile, "DATA"))[k].data
 
-            		PrintTable(data)
             		for k, v in ipairs(data) do
             			table.insert( waypoints, v )
             		end
